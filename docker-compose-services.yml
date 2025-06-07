@@ -1,0 +1,20 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: ${MYSQL_DB_HOST}
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}  
+      MYSQL_USER: ${MYSQL_DB_USER}                  
+      MYSQL_PASSWORD: ${MYSQL_DB_PASS}             
+      MYSQL_DATABASE: ${MYSQL_DB_NAME}                
+    networks:
+      - record-network
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+networks:
+  record-network:
+    external: true
+
+volumes:
+  mysql-data:
