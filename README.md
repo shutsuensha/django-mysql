@@ -18,7 +18,7 @@
 Скопируйте файл **.env.example** в **.env** и заполните его следующим образом(пример):
 ```ini
 MYSQL_DB_HOST=mysql_container
-MYSQL_DB_PORT=1234
+MYSQL_DB_PORT=3306
 MYSQL_DB_USER=user
 MYSQL_DB_PASS=password
 MYSQL_DB_NAME=dbname
