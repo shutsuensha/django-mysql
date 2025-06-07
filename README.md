@@ -14,12 +14,12 @@
 ### Подготовка переменных окружения
 Скопируйте файл **.env.example** в **.env** и заполните его следующим образом(пример):
 ```ini
-MYSQL_DB_HOST=mysql_container
-MYSQL_DB_PORT=3306
-MYSQL_DB_USER=user
-MYSQL_DB_PASS=password
-MYSQL_DB_NAME=dbname
-MYSQL_ROOT_PASSWORD=rootpassword
+MYSQL_DB_HOST=
+MYSQL_DB_PORT=3306 - обязательно
+MYSQL_DB_USER=
+MYSQL_DB_PASS=
+MYSQL_DB_NAME=
+MYSQL_DB_PASS_ROOT=
 ```
 
 ### Создание docker-сети
