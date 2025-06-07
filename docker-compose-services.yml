@@ -1,12 +1,12 @@
 services:
   mysql:
-    image: mysql:8.0
+    image: mysql:8
     container_name: ${MYSQL_DB_HOST}
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}  
-      MYSQL_USER: ${MYSQL_DB_USER}                  
-      MYSQL_PASSWORD: ${MYSQL_DB_PASS}             
-      MYSQL_DATABASE: ${MYSQL_DB_NAME}                
+      MYSQL_ROOT_PASSWORD: ${MYSQL_DB_PASS_ROOT}    
+      MYSQL_DATABASE: ${MYSQL_DB_NAME}            
+      MYSQL_USER: ${MYSQL_DB_USER}           
+      MYSQL_PASSWORD: ${MYSQL_DB_PASS}         
     networks:
       - record-network
     volumes:
